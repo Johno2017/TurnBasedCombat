@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvindkdkl87rt"]
+
+[ext_resource type="PackedScene" uid="uid://b27iotowx4m3k" path="res://Scenes/player_char.tscn" id="1_s7jdk"]
+[ext_resource type="Texture2D" uid="uid://cilcb3j1jmrr4" path="res://Sprites/TestEnemy.png" id="1_ymuy5"]
+
+[node name="CombatView" type="Node2D"]
+
+[node name="TurnManager" type="Node2D" parent="."]
+
+[node name="PlayerChar" parent="TurnManager" instance=ExtResource("1_s7jdk")]
+
+[node name="TestEnemy" type="Sprite2D" parent="TurnManager"]
+texture_filter = 1
+position = Vector2(807, 346)
+scale = Vector2(3, 3)
+texture = ExtResource("1_ymuy5")
